@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4A32D5BB-C214-45B5-98A2-C2F5DB656F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "WebTest\WebTest.csproj", "{D9EB9240-BDA7-4EAC-A694-59845272F9EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Owin.FastMVC", "Owin.FastMVC\Owin.FastMVC.csproj", "{CC5870A7-5357-438F-AE22-29A85D02087D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9EB9240-BDA7-4EAC-A694-59845272F9EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9EB9240-BDA7-4EAC-A694-59845272F9EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9EB9240-BDA7-4EAC-A694-59845272F9EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9EB9240-BDA7-4EAC-A694-59845272F9EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5870A7-5357-438F-AE22-29A85D02087D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5870A7-5357-438F-AE22-29A85D02087D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5870A7-5357-438F-AE22-29A85D02087D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5870A7-5357-438F-AE22-29A85D02087D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9EB9240-BDA7-4EAC-A694-59845272F9EA} = {4A32D5BB-C214-45B5-98A2-C2F5DB656F77}
+	EndGlobalSection
+EndGlobal
