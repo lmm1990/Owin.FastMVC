@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace FastMVC.ClassHandler
+namespace Owin.FastMVC.ClassHandler
 {
     public static class DataHandler
     {

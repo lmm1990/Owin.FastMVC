@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace FastMVC.ClassHandler
+namespace Owin.FastMVC.ClassHandler
 {
     public static class AppConfig
     {

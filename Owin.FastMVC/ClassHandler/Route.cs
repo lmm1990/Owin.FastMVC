@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Reflection;
 
-namespace FastMVC.ClassHandler
+namespace Owin.FastMVC.ClassHandler
 {
     public class Route
     {

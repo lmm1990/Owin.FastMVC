@@ -7,7 +7,7 @@ using System.Web;
 using System.Configuration;
 using Microsoft.Owin;
 using Owin;
-using FastMVC.ClassHandler;
+using Owin.FastMVC.ClassHandler;
 
 [assembly: OwinStartup(typeof(Startup))]
 public class Startup
@@ -39,9 +39,10 @@ public class Startup
 
                     MethodInfo preRequestMethod;
                     string path;
+                    object instance;
                     foreach (Type type in Assembly.GetAssembly(appType).GetTypes())
                     {
-                        if (!type.IsClass || !type.IsPublic || type.Name.IndexOf("Controller") == -1)
+                        if (!type.IsClass || !type.IsPublic || type.Name.IndexOf("Controller") == -1 || type.Namespace.IndexOf("Controller") == -1)
                         {
                             continue;
                         }
@@ -50,6 +51,7 @@ public class Startup
                         {
                             preRequestMethod = null;
                         }
+                        instance = Activator.CreateInstance(type);
                         foreach (MethodInfo item in type.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
                         {
                             if (item.Name.Equals("GetType") || 
@@ -64,11 +66,12 @@ public class Startup
                             DataHandler.routeList[string.Format("{0}/{1}", path, item.Name).ToLower()] = new Route
                             {
                                 Method = item,
-                                PreRequestMethod = preRequestMethod,
-                                Instance = Activator.CreateInstance(type)
+                                PreRequestMethod = preRequestMethod
                             };
+                            DataHandler.routeList[string.Format("{0}/{1}", path, item.Name).ToLower()].Instance = instance;
                         }
                     }
+                    instance = null;
                     preRequestMethod = null;
                     path = null;
                     isFirstIn = true;
