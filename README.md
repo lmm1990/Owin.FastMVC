@@ -1,21 +1,21 @@
-?# Owin.FastMvc
+# Owin.FastMvc
 
-Owin.FastMvcÊÇÒ»¸öÇáÁ¿¼¶µÄMVC¿ò¼Ü£¬»ùÓÚowin(asp.net nextÒ²ÊÇ»ùÓÚowin)
+Owin.FastMvcæ˜¯ä¸€ä¸ªè½»é‡çº§çš„MVCæ¡†æ¶ï¼ŒåŸºäºowin(asp.net nextä¹Ÿæ˜¯åŸºäºowin)
 
-##      	Ä¿Â¼
+##      	ç›®å½•
 
 
-*	[¿ìËÙÉÏÊÖ](#¿ìËÙÉÏÊÖ)
-*	[ËµÃ÷](#¿ìËÙÉÏÊÖ)
+*	[å¿«é€Ÿä¸Šæ‰‹](#å¿«é€Ÿä¸Šæ‰‹)
+*	[è¯´æ˜](#è¯´æ˜)
 
-## ¿ìËÙÉÏÊÖ
+## å¿«é€Ÿä¸Šæ‰‹
 
-### ÅäÖÃweb.config
+### é…ç½®web.config
 <appSettings>
     <add key="applicationClass" value="WebTest.Startup, WebTest" />
 </appSettings>
 
-### Ìí¼ÓÈë¿ÚÀàÎÄ¼ş
+### æ·»åŠ å…¥å£ç±»æ–‡ä»¶
     using System;
     using System.Collections.Generic;
     using Owin;
@@ -48,7 +48,7 @@ Owin.FastMvcÊÇÒ»¸öÇáÁ¿¼¶µÄMVC¿ò¼Ü£¬»ùÓÚowin(asp.net nextÒ²ÊÇ»ùÓÚowin)
         }
     }
 
-##	±àĞ´¿ØÖÆÆ÷´úÂë
+##	ç¼–å†™æ§åˆ¶å™¨ä»£ç 
 
     using System;
     using System.Threading.Tasks;
@@ -74,17 +74,17 @@ Owin.FastMvcÊÇÒ»¸öÇáÁ¿¼¶µÄMVC¿ò¼Ü£¬»ùÓÚowin(asp.net nextÒ²ÊÇ»ùÓÚowin)
         }
     }
 
-## ËµÃ÷
+## è¯´æ˜
 
-1¡¢Owin.FastMVCÅäºÏFastTemplateÊ¹ÓÃĞ§¹û¸ü¼Ñ
+1ã€Owin.FastMVCé…åˆFastTemplateä½¿ç”¨æ•ˆæœæ›´ä½³
 
-2¡¢¿ØÖÆÆ÷ÀàÃû±ØĞë°üº¬£ºController
+2ã€æ§åˆ¶å™¨ç±»åå¿…é¡»åŒ…å«ï¼šController
 
-3¡¢PreRequestÔÚactionÖ´ĞĞÇ°Ö´ĞĞ£¬PreRequest·µ»Øfalse£¬action½«²»Ö´ĞĞ
+3ã€PreRequeståœ¨actionæ‰§è¡Œå‰æ‰§è¡Œï¼ŒPreRequestè¿”å›falseï¼Œactionå°†ä¸æ‰§è¡Œ
 
-4¡¢·ÃÎÊUrlÎª£ºÃüÃû¿Õ¼äControllersºó±ß²¿·Ö+¹ã¸æÃû£¬Àı£ºÃüÃû¿Õ¼äÎª£ºdemo.Controllers.manage£¬action·½·¨ÃûÎª£ºindex£¬ÔòÇëÇóURLÎª£º/manage/index
+4ã€è®¿é—®Urlä¸ºï¼šå‘½åç©ºé—´Controllersåè¾¹éƒ¨åˆ†+å¹¿å‘Šåï¼Œä¾‹ï¼šå‘½åç©ºé—´ä¸ºï¼šdemo.Controllers.manageï¼Œactionæ–¹æ³•åä¸ºï¼šindexï¼Œåˆ™è¯·æ±‚URLä¸ºï¼š/manage/index
 
-5¡¢Url²ÎÊı£º¿ÉÒÔÓÃQueryString ? ĞÎÊ½´«µİ²ÎÊı£¬Ò²¿ÉÒÔÓÃ!·Ö¸î£¬Àı£º/List!1£¨!·Ö¸î²ÎÊı£¬²ÎÊıÖµ¾ùÎªstingÀàĞÍ£¬ÏêÇéÇë²Î¿¼Ê¾Àı£©
+5ã€Urlå‚æ•°ï¼šå¯ä»¥ç”¨QueryString ? å½¢å¼ä¼ é€’å‚æ•°ï¼Œä¹Ÿå¯ä»¥ç”¨!åˆ†å‰²ï¼Œä¾‹ï¼š/List!1ï¼ˆ!åˆ†å‰²å‚æ•°ï¼Œå‚æ•°å€¼å‡ä¸ºstingç±»å‹ï¼Œè¯¦æƒ…è¯·å‚è€ƒç¤ºä¾‹ï¼‰
 
 
-FastTemplateÏîÄ¿µØÖ·: [FastTemplate](https://github.com/lmm1990/FastTemplate)
+FastTemplateé¡¹ç›®åœ°å€: [FastTemplate](https://github.com/lmm1990/FastTemplate)
